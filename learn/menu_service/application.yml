@@ -7,8 +7,7 @@ spring:
       settings:
         web-allow-others: true
         
-  application:
-    name: menu-service
+
   jpa:
     generate-ddl: true
     hibernate:
