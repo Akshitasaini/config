@@ -1,5 +1,3 @@
-server:
-  port: 8081
 spring:
   h2:
     console:
@@ -7,9 +5,6 @@ spring:
       enabled: true
       settings:
         web-allow-others: true
-        
-  application:
-    name: menu-service
   jpa:
     generate-ddl: true
     hibernate:
