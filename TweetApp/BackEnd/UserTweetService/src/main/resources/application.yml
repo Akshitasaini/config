@@ -1,0 +1,23 @@
+server:
+  port: 8069
+spring:
+  //h2:
+    //console:
+      //path: /console
+      //enabled: true
+      //settings:
+       // web-allow-others: true
+  data:
+    mongodb:
+      host: localhost
+      port: 27017
+      database: TweetApp
+//  jpa:
+  //  hibernate:
+    //  ddl-auto: update
+    //generate-ddl: true
+    
+  application:
+    name: user-service
+    
+   
