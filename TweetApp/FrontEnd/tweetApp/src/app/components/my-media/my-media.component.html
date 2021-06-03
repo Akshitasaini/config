@@ -1,0 +1,34 @@
+
+<div style="padding: 10px; margin: 0px 0px 0px 90px;">
+
+
+    <div class="row">
+        <div class="card" style="width: 76rem; margin: 15px;" *ngFor="let p of media">
+           
+            <div class="card-body">
+                <h5 style="text-align: center;" class="card-title">{{p.title}}</h5>
+                <h5 style="text-align: justify;" class="card-title">{{p.description}}</h5>
+
+            </div>
+           
+            <div class="card-body">
+                <h5 style="text-align:left;" class="card-title">{{p.tags}}</h5>
+                <h5 style="text-align:right ;" class="card-title">{{p.date}}</h5>
+            </div>
+            <br>
+
+
+            <div class="row">
+                <div class="col col-sm-1">
+                    <img src="../assets/like.png" width=25px (click)="likeButtonClick()">
+                    <p>{{numberOfLikes}}</p>
+                </div>
+                <div class="col col-sm-2">
+                    <img src="../assets/dislike.png" width="25px">
+                </div>
+                <div class="col col-sm-1">
+                    <img src="../assets/comment.svg" width=25px>
+                </div>
+
+            </div>
+        </div>

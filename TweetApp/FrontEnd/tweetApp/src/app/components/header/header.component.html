@@ -1,0 +1,37 @@
+
+<div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-2" style="margin-top: 18px; text-align: left; font-size: 20px;">
+        <img src="../assets/social-media.png" width="60vw" height="60vh" />   
+        TweetApp
+    </div>
+      <div class="col-sm-1 col-sm-offset-1"></div>
+      <div class="col-sm-6">
+        <nav class="navbar navbar-expand-lg navbar-light" >
+            <div class="navbar-nav mx-auto" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link btn btn-outline-warning" href="#" routerLink="uploadmedia" type="button">Upload Tweet<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link btn btn-outline-warning" href="#" routerLink="mymedia" type="button">My Tweets</a>
+                </li>
+                <!-- <li class="nav-item">
+                  <a class="nav-link btn btn-outline-warning" href="#" routerLink="follow" type="button">Followers/Following</a>
+                </li> -->
+              </ul>
+            </div>
+          </nav>
+      </div>
+      <div class="col-sm-1 col-sm-offset-1"></div>
+      <div class="col-sm-2" style="text-align: right; margin-top: 15px;">
+        <img src="{{ userpic }}" onerror="this.onerror=null; this.src='../assets/profile.png'"  width="80vw" style="margin-left: 5px;"/>
+        <a href="#" style="text-decoration:none" routerLink="newsfeed" type="button" class="btn btn-success">Account</a>
+        
+      </div>
+      <div class="col-sm-12 col-md-12 col-lg-12 align-self-center">
+        <h3 class="text-center"> Welcome, {{username}}</h3>
+    </div>
+    </div>
+    
+  </div>
